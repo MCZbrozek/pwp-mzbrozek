@@ -1,0 +1,39 @@
+
+
+.img-overlay-wrap {
+    position: relative;
+    display: inline-block;
+
+}
+
+.img-overlay-wrap img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.img-overlay-wrap svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 50%;
+    transition: transform 150ms ease-in-out;
+} /* Currently displays the big purple circle SVG*/
+
+.img-overlay-wrap svg circle:hover {
+    transform: rotate(90deg);
+}
+
+.img-overlay-wrap svg polygon:hover {
+    transform: rotate(90deg);
+}
+
+.portfolio-wrap {
+    background-color: #515975;
+    position: static;
+}
+
+.portfolio-wrap .card-body {
+    background-color: #F3D662;
+
+}

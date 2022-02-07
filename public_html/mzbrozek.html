@@ -6,10 +6,11 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     <title>MZbrozek_PWP</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm p-3 bg-body rounded ">
+<nav class="navbar navbar-expand-md navbar-light bg-white shadow-lg p-3 bg-body rounded sticky ">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,20 +26,50 @@
         </div>
     </div>
 </nav>
-<div class="position-relative">
-    <div
-            class="svg-wrapper bg-image-expand-md shadow-1-strong rounded-lg"
-            style="background-image: url(&quot;https://mdbootstrap.com/img/new/slides/026.jpg&quot;); height: 100vh;">
-        <svg data-name="Layer 1"
-             xmlns="http://www.w3.org/2000/svg"
-             viewBox="0 0 1200 120"
-             preserveAspectRatio="none"
-             class="svg"
-             style="height: 669px; width: 100%; fill: rgb(20, 77, 133); opacity: 0.8; transform: rotateY(0deg);">
-            <path
-                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
-            </path>
-        </svg></div>
+<!--This is currently where my background image is living. I want to add an SVG overlay with animation. But we should probably just get some stuff down first.-->
+<div class="img-overlay-wrap">
+    <img src="./images/redrocks_02.jpg" class="image-fluid" alt="placeholder image">
+
+
+
+                <svg viewBox="0 0 400 400">
+                    <circle cx="100" cy="25" r="100" fill="purple" />
+                </svg>
+
+
+                    <svg viewBox="0 0 400 400">
+                    <polygon points="225,40 10,80 100,30.5" fill="blue" class="triangle"/>
+                    </svg>
+
+                <svg viewBox="0 0 400 400">
+                    <polygon points="130,100 20,24 122,32" fill="orange" class="triangle"/>
+                </svg>
+
+</div> <!-- This is your svg and background banner element -->
+<div class="portfolio-wrap m-0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card m-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card m-5">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>
 
 
