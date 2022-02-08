@@ -1,23 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+}
 
 
-.img-overlay-wrap {
+
+.hero {
     position: relative;
-    display: inline-block;
-
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.img-overlay-wrap img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.img-overlay-wrap svg {
+.hero::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 50%;
+    width: 100%;
+    height: 100%;
+    background: url("./images/redrocks_02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(80%);
+
+}
+
+.hero svg{
+    /*position: relative;*/
+    aspect-ratio: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 80%;
     transition: transform 150ms ease-in-out;
+}
+
+.hero-content {
+    position: relative;
+    font-family: "Monserrat", sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0.625rem;
+    /*outline: 2px red solid;*/
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 0;
+    /*outline: 2px red solid;*/
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 1rem;
+    /*outline: 2px red solid;*/
+}
+/*.img-overlay-wrap svg {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    opacity: 50%;*/
+/*    transition: transform 150ms ease-in-out;*/
 } /* Currently displays the big purple circle SVG*/
 
 .img-overlay-wrap svg circle:hover {
@@ -29,11 +78,28 @@
 }
 
 .portfolio-wrap {
-    background-color: #515975;
+    /*background-color: #515975;*/
     position: static;
 }
 
 .portfolio-wrap .card-body {
     background-color: #F3D662;
 
+}
+
+.about-me-wrap {
+    background-color: white;
+
+}
+
+.about-me .education-wrap {
+    background-color: #F29F80;
+}
+
+.about-me .skills-wrap {
+    background-color: #8677A6;
+}
+
+.about-me .hobbies-wrap {
+    background-color: #01858B;
 }

@@ -27,34 +27,45 @@
     </div>
 </nav>
 <!--This is currently where my background image is living. I want to add an SVG overlay with animation. But we should probably just get some stuff down first.-->
-<div class="img-overlay-wrap">
-    <img src="./images/redrocks_02.jpg" class="image-fluid" alt="placeholder image">
+<div class="hero container-fluid">
+    <div class="hero-content row">
+        <div class="col-8">
+            <svg viewBox="0 0 600 400"
+                 preserveAspectRatio="none" x="0" y="30">
+                <circle cx="100" cy="25" r="100" fill="#8677A6" />
+            </svg>
+        <h1 class="hero-title">Mike Zbrozek</h1>
+        </div>
+        <div class="col-4">
+            <svg viewBox="0 0 400 400"
+                 preserveAspectRatio="none" x="0" y="30">
+                <polygon points="325,40 110,80 200,30.5" fill="#01858B" class="triangle"/>
+            </svg>
+        <h2 class="hero-subtitle col 4">Inspiring sales content</h2>
+        </div>
+    </div>
 
 
 
-                <svg viewBox="0 0 400 400">
-                    <circle cx="100" cy="25" r="100" fill="purple" />
-                </svg>
 
 
-                    <svg viewBox="0 0 400 400">
-                    <polygon points="225,40 10,80 100,30.5" fill="blue" class="triangle"/>
-                    </svg>
-
-                <svg viewBox="0 0 400 400">
-                    <polygon points="130,100 20,24 122,32" fill="orange" class="triangle"/>
-                </svg>
-
+    <svg viewBox="0 0 400 400"
+         preserveAspectRatio="none" x="0" y="30">
+        <polygon points="130,100 20,24 122,32" fill="#F8A381" class="triangle"/>
+    </svg>
 </div> <!-- This is your svg and background banner element -->
-<div class="portfolio-wrap m-0">
+<div class="portfolio-wrap bg-dark m-0">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-6">
                 <div class="card m-3">
                     <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <img class="img-fluid" src="./images/phone_prototype-temp.png" alt="portfolio placeholder image">
+                        <dl class="row">
+                        <dt class="col-sm-6 display 5">Albuquerque Tool Shed</dt>
+                        <dd class="col-sm-6">Deep Dive 10 week full time bootcamp capstone project</dd>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </dl>
                     </div>
                 </div>
             </div>
@@ -71,6 +82,51 @@
 
     </div>
 </div>
+
+<div class="about-me-wrap">
+<div class="about-me container-fluid">
+<div class="row">
+<div class="education-wrap col my-2 mx-1">
+    <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+<div class="skills-wrap col my-2 mx-1"></div>
+<div class="hobbies-wrap col my-2 mx-1">
+    <img class="p-2 img-fluid " src="./images/grand_canyon.jpg" alt="Grand Canyon Rim to rim to rim 2021">
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid bg-dark">
+    <div class="col p-4">
+        <h3 class="text-light">Connect with the great and powerful Mike!</h3>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-dark">
+    <div class="col p-4">
+        <div class="text-center text-light ">
+            Dripping in this strange design, none is yours and far less mine
+        </div>
+    </div>
+</div>
+
 
 
 
