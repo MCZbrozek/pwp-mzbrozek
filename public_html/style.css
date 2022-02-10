@@ -68,7 +68,7 @@ body {
 /*    left: 0;*/
 /*    opacity: 50%;*/
 /*    transition: transform 150ms ease-in-out;*/
-} /* Currently displays the big purple circle SVG*/
+/*} !* Currently displays the big purple circle SVG*!*/
 
 .img-overlay-wrap svg circle:hover {
     transform: rotate(90deg);
@@ -103,4 +103,22 @@ body {
 
 .about-me .hobbies-wrap {
     background-color: #01858B;
+}
+
+.contact-form {
+    background-color: #45718C;
+    color: black;
+    opacity: 200%;
+}
+
+.link-container {
+    background-color: #45718C;
+}
+
+/*footer line and quote style */
+.foot-line-wrap {
+    background-color: #038C8C;
+    outline: 5px black solid;
+    color: black;
+
 }
