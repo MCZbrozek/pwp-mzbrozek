@@ -1,17 +1,21 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'helvetica neue'
 }
 
 
 
 .hero {
+    font-family: 'helvetica neue';
     position: relative;
     width: 100vw;
-    height: 60vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    outline: 2px solid red;
 }
 
 .hero::before {
@@ -30,19 +34,19 @@ body {
 
 }
 
-.hero svg{
-    /*position: relative;*/
-    aspect-ratio: inherit;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 80%;
-    transition: transform 150ms ease-in-out;
-}
+/*.hero svg{*/
+/*    !*position: relative;*!*/
+/*    aspect-ratio: inherit;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    opacity: 80%;*/
+/*    transition: transform 150ms ease-in-out;*/
+/*}*/
 
 .hero-content {
+    font-family: "helvetica neue";
     position: relative;
-    font-family: "Monserrat", sans-serif;
     color: white;
     text-align: center;
     margin: 0.625rem;
@@ -114,6 +118,8 @@ body {
 .link-container {
     background-color: #45718C;
 }
+
+
 
 /*footer line and quote style */
 .foot-line-wrap {
