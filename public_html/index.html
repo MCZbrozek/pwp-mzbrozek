@@ -117,8 +117,6 @@
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
                 <input class="form-control" id="name" placeholder="Your name" aria-label="default input example">
-<!--                <label for="exampleFormControlInput1" class="form-label">Name</label>-->
-<!--                <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">-->
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
@@ -127,16 +125,18 @@
             <div class="mb-3">
                 <label for="subject" class="form-label">Subject</label>
                 <input class="form-control" id="subject" placeholder="Say why you are reaching out" aria-label="default input example">
-<!--                <label for="exampleFormControlInput1" class="form-label">Subject</label>-->
-<!--                <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">-->
             </div>
             <div class="mb-3">
                 <label for="message" class="form-label">Example textarea</label>
                 <textarea class="form-control" id="message" rows="3"></textarea>
+
+                <div class="g-recaptcha" data-sitekey="6LejxnoeAAAAAJyjafaHyDauqJf1G1RCGN6Y4i42"></div>
+
                 <button type="submit" class="btn btn-primary">Submit</button>
                 <button type="button" class="btn btn-primary">reset</button>
             </div>
     </form>
+</div>
 
     <div id="output-area"></div>
         </div>
@@ -200,5 +200,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js" integrity="sha512-XZEy8UQ9rngkxQVugAdOuBRDmJ5N4vCuNXCh8KlniZgDKTvf7zl75QBtaVG1lEhMFe2a2DuA22nZYY+qsI2/xA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script src="js/script.js"></script>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
