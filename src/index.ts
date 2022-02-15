@@ -4,7 +4,7 @@ import {request, Response} from "express";
 const express = require('express')
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
-const Recaptcha = require('express-recaptcha')
+const Recaptcha = require('express-recaptcha').RecaptchaV2
 const formData = require('form-data')
 const Mailgun = require('mailgun.js') //this is a class so we made it uppercase
 const mailgun = new Mailgun(formData) //make a new object using the rules from package formData
@@ -34,6 +34,7 @@ const handleGetRequest = (request: Request, response: Response) => {
 const handlePostRequest = (request: Request, response: Response) => {
     response.append('Content-Type', 'text/html')
 
+    // @ts-ignore
     if(request.recaptcha.error) {
         return response.send(
             `<div class='alert alert-danger' role='alert'><strong>Oh Snap!</strong>There was a Recaptcha error. Please try again.</div>`
