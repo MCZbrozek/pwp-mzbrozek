@@ -1,13 +1,17 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'helvetica neue'
+    font-family: 'Padauk', sans-serif;
+}
+
+nav {
+    position: sticky;
+    box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
 }
 
 
-
 .hero {
-    font-family: 'helvetica neue';
+    font-family: 'Permanent Marker', cursive;
     position: relative;
     width: 100vw;
     height: 80vh;
@@ -15,11 +19,11 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    outline: 2px solid red;
+
 }
 
 .hero::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -30,8 +34,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    filter: brightness(80%);
-
+    /*filter: brightness(80%);*/
+    filter: blur(--blur);
 }
 
 /*.hero svg{*/
@@ -44,12 +48,14 @@ body {
 /*    transition: transform 150ms ease-in-out;*/
 /*}*/
 
-.hero-content {
-    font-family: "helvetica neue";
+.hero .row {
+    font-family: 'Permanent Marker', cursive;
     position: relative;
+    bottom: 125px;
     color: white;
-    text-align: center;
+    text-align: start;
     margin: 0.625rem;
+    text-shadow: 5px 2.5px 0 rgba(0,0,0,0.5);
     /*outline: 2px red solid;*/
 }
 
@@ -109,7 +115,7 @@ body {
     background-color: #01858B;
 }
 
-.contact-form {
+.closing-wrap .row {
     background-color: #45718C;
     color: black;
     opacity: 200%;

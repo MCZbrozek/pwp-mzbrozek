@@ -34,6 +34,7 @@ $(document).ready(function (){
             }
         },
         submitHandler: (form) => {
+            console.log("is this thing on")
             $('#contact').ajaxSubmit({
                 type: 'POST',
                 url: $('#contact').attr('action'),

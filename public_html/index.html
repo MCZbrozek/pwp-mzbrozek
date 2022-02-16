@@ -9,8 +9,11 @@
     <!--Style CSS -->
     <link rel="stylesheet" href="./style.css">
     <!--Fonts CSS    -->
-    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Padauk&family=Permanent+Marker&display=swap" rel="stylesheet">
 
     <title>Mike Zbrozek</title>
 </head>
@@ -34,33 +37,25 @@
 </nav>
 <!--This is currently where my background image is living. I want to add an SVG overlay with animation. But we should probably just get some stuff down first.-->
 <div class="hero container-fluid">
-    <div class="hero-content row">
+    <div class="row">
         <div class="col-8">
             <h1 class="hero-title">Mike Zbrozek</h1>
-<!--            <svg viewBox="0 0 600 400"-->
-<!--                 preserveAspectRatio="none" x="0" y="30">-->
-<!--                <circle cx="100" cy="25" r="100" fill="#8677A6" />-->
-<!--            </svg>-->
-
         </div>
-        <div class="col-4">
-<!--            <svg viewBox="0 0 400 400"-->
-<!--                 preserveAspectRatio="none" x="0" y="30">-->
-<!--                <polygon points="325,40 110,80 200,30.5" fill="#01858B" class="triangle"/>-->
-<!--            </svg>-->
-        <h2 class="hero-subtitle col 4">Inspiring sales content</h2>
+        <div class="col-2">
+            <h2 class="hero-subtitle">Web Development</h2>
         </div>
     </div>
-
-
-
-
-
-<!--    <svg viewBox="0 0 400 400"-->
-<!--         preserveAspectRatio="none" x="0" y="30">-->
-<!--        <polygon points="130,100 20,24 122,32" fill="#F8A381" class="triangle"/>-->
-<!--    </svg>-->
-</div> <!-- This is your svg and background banner element -->
+        <div class=" row">
+            <div class="col 8">
+                <h2>Adventure</h2>
+            </div>
+        </div>
+        <div class=" row">
+            <div class="col-8">
+                <h1>Creativity</h1>
+            </div>
+        </div>
+</div>
 <div class="portfolio-wrap bg-dark m-0">
     <div class="container-fluid">
         <div class="row">
@@ -95,85 +90,98 @@
 <div class="row">
 <div class="education-wrap col-md my-2 mx-1">
     <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
+        <h4 class="card-title">Education</h4>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">Work History</h5>
     </div>
 </div>
-<div class="skills-wrap col-md my-2 mx-1"></div>
+<div class="skills-wrap col-md my-2 mx-1">
+    <h4 class="card-title">Web Development Skills</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <h5 class="card-title">Work History</h5>
+</div>
 <div class="hobbies-wrap col-md my-2 mx-1">
+    <h4 class="card-title">Interests</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <h5 class="card-title">Work History</h5>
     <img class="p-2 img-fluid " src="./images/grand_canyon.jpg" alt="Grand Canyon Rim to rim to rim 2021">
 </div>
 </div>
 </div>
 </div>
 
-<div class=" contact-form container-fluid ">
-    <form action="./apis" id="contact" method="post" novalidate>
+
+<div class=" closing-wrap container-fluid ">
     <div class="row">
-        <div class="col-4 p-4">
-            <h3>Connect with the great and powerful Mike!</h3>
 
-            <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input class="form-control" id="name" placeholder="Your name" aria-label="default input example">
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder="name@example.com">
-            </div>
-            <div class="mb-3">
-                <label for="subject" class="form-label">Subject</label>
-                <input class="form-control" id="subject" placeholder="Say why you are reaching out" aria-label="default input example">
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Example textarea</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
+<!--Begin Contact Form -->
+        <div class="contact-form col-md-5">
+        <h3>Connect with Mike!</h3>
+        <div></div>
 
-                <div class="g-recaptcha" data-sitekey="6LejxnoeAAAAAJyjafaHyDauqJf1G1RCGN6Y4i42"></div>
-
-                <button type="submit" class="btn btn-primary">Submit</button>
-                <button type="button" class="btn btn-primary">reset</button>
-            </div>
-    </form>
-</div>
-
-    <div id="output-area"></div>
-        </div>
-
-        <div class="col-8">
-            <div class="container center m-2">
-
-                <div class="row">
-
-                    <div class="col-2">
-                        <h4>Where to find me in real life</h4>
+             <form action="./apis/" id="contact" method="post" novalidate>
+                     <div class=" form-group ">
+                        <label for="name" class="form-label">Name</label>
+                            <input class="form-control" id="name" name="name" placeholder="Your name" type="text" >
                     </div>
-                    <div class="col-2">
+                    <div class=" form-group ">
+                        <label for="email" class="form-label">Email address</label>
+                        <input class="form-control" id="email" name="email" placeholder="name@example.com" type="email">
+                    </div>
+                    <div class=" form-group ">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input class="form-control" id="subject" name="subject" placeholder="Say why you are reaching out" type="text">
+                    </div>
+                    <div class=" form-group ">
+                        <label for="message" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="message" maxlength="2000" name="message" placeholder="Your Message (2000 characters max" required rows="5"></textarea>
+                    </div>
+                        <div class="g-recaptcha" data-sitekey="6LejxnoeAAAAAJyjafaHyDauqJf1G1RCGN6Y4i42"></div>
 
+                        <button class="btn btn-info" type="submit" >Submit</button>
+                        <button class="btn btn-primary" type="reset">reset</button>
+            </form>
+           <!-------- End of contact form ------>
+            <div id="output-area"></div>
+        </div> <!-- /col-md-6 -->
+
+
+        <div class="col-md-6 center m-4">
+            <div class="container ">
+
+                <div class="row m-0">
+                    <h4>Where to find me in real life</h4>
+                <div class="row">
+                    <div class="col-1">
+                    </div>
+                    <div class="col-sm-2">
                         <img src="./images/logos/bike_logo.png" alt="bike png" class="img-fluid pt-5 " >
                     </div>
-                    <div class="col-2 ">
+                    <div class="col-sm-2 ">
                         <img src="./images/logos/running_log-o.png" alt="run png" class="img-fluid pt-4 pb-4">
                     </div>
-
+                </div>
+                    <hr>
                     <div class="row">
-                        <div class="col-2 ">
+                        <h4>Where to find me online</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2 ">
                             <img src="./images/logos/new-linkedin-logo-white-black-png.png" alt="linkedIn" class="img-fluid">
                         </div>
-                        <div class="col-2 ">
+                        <div class="col-sm-2 ">
                             <img src="./images/logos/github_logo.png" alt="github" class="img-fluid">
                         </div>
-                        <div class="col-2">
-                            <img src="./images/logos/strava_logo.png" alt="Strava logo">
+                        <div class="col-sm-2">
+                            <img src="./images/logos/strava_logo.png" alt="Strava logo" class="img-fluid">
                         </div>
-                        <div class="col-2"> Where to find me on the web</div>
+
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </div> <!-- /row -->
+</div> <!-- /container -->
 
 
 <div class="foot-line-wrap">
@@ -186,21 +194,23 @@
 </div>
 </div>
 
+
+<!------------Bootstrap------------>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
 
 <!--JQuery-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js" integrity="sha512-YUkaLm+KJ5lQXDBdqBqk7EVhJAdxRnVdT2vtCzwPHSweCzyMgYV/tgGF4/dCyqtCC2eCphz0lRQgatGVdfR0ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js" integrity="sha512-XZEy8UQ9rngkxQVugAdOuBRDmJ5N4vCuNXCh8KlniZgDKTvf7zl75QBtaVG1lEhMFe2a2DuA22nZYY+qsI2/xA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script crossorigin="anonymous" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-F6h55Qw6sweK+t7SiOJX+2bpSAa3b/fnlrVCJvmEj1A="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-0Yg/eibVdKyxkuVo1Qwh0DspoUCHvSbm/oOoYVz32BQ="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
 
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<script src="js/script.js"></script>
 </body>
 </html>

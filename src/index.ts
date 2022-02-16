@@ -11,7 +11,7 @@ const mailgun = new Mailgun(formData) //make a new object using the rules from p
 
 
 // validation tools
-const [check, validationResult] = require('express-validator')
+const {check, validationResult} = require('express-validator')
 
 const validation = [
     check('name', 'A valid name is required').not().isEmpty().trim().escape(),
@@ -22,6 +22,12 @@ const validation = [
 
 // set up our app
 const app = express()
+app.use(morgan('dev'))
+app.use(express.json())
+app.use(bodyParser.urlencoded({extended:false}))
+app.use(bodyParser.json())
+
+
 
 const recaptcha = new Recaptcha(process.env.RECAPTCHA_SITE_KEY, process.env.RECAPTCHA_SECRET_KEY)
 
@@ -73,8 +79,7 @@ const handlePostRequest = (request: Request, response: Response) => {
 
 }
 
-app.use(morgan('dev'))
-app.use(express.json())
+
 
 
 // route
