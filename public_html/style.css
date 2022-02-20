@@ -1,3 +1,9 @@
+:root {
+    --blur: 10px;
+    --rotate: -1.8deg
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -9,17 +15,17 @@ nav {
     box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
 }
 
-
+/* -------- Hero element photo and text -------*/
 .hero {
     font-family: 'Permanent Marker', cursive;
     position: relative;
     width: 100vw;
     height: 80vh;
     display: flex;
+    place-items: center;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-
 }
 
 .hero::before {
@@ -34,19 +40,14 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    overflow: hidden;
     /*filter: brightness(80%);*/
     filter: blur(--blur);
+    /*border-bottom: black .5rem solid;*/
+    /*box-shadow: #45718C  2rem;*/
+    box-shadow: inset 0 0 0 .5rem rgba(100,100,155,0.4);
 }
 
-/*.hero svg{*/
-/*    !*position: relative;*!*/
-/*    aspect-ratio: inherit;*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    opacity: 80%;*/
-/*    transition: transform 150ms ease-in-out;*/
-/*}*/
 
 .hero .row {
     font-family: 'Permanent Marker', cursive;
@@ -59,41 +60,50 @@ nav {
     /*outline: 2px red solid;*/
 }
 
+
 .hero-title {
     font-size: 3rem;
     font-weight: 600;
-    margin-top: 0;
-    /*outline: 2px red solid;*/
+    margin: 5rem;
+
+
 }
 
 .hero-subtitle {
     font-size: 2rem;
     font-weight: 200;
-    margin-top: 1rem;
-    /*outline: 2px red solid;*/
-}
-/*.img-overlay-wrap svg {*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    opacity: 50%;*/
-/*    transition: transform 150ms ease-in-out;*/
-/*} !* Currently displays the big purple circle SVG*!*/
+    margin: 5rem;
 
-.img-overlay-wrap svg circle:hover {
-    transform: rotate(90deg);
 }
 
-.img-overlay-wrap svg polygon:hover {
-    transform: rotate(90deg);
-}
+/*------ Portfolio Wrap - capstone card and text --- */
 
 .portfolio-wrap {
-    /*background-color: #515975;*/
-    position: static;
+    background-color: #515975;
+    position: relative;
+    background: url("./images/codingbackground.png");
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    background-position: center center;
 }
 
-.portfolio-wrap .card-body {
+.portfolio-wrap .col-sm {
+    margin: 2rem;
+}
+
+.portfolio-wrap .card {
+    border: #038C8C outset .5rem;
+    outline: black .5rem solid;
+    box-shadow: 0 0 0 1rem #45718C;
+    margin: 4rem;
+    outline-offset: 0.2rem;
+    transform: rotate(var(--rotate));
+    border-top-left-radius: 37px 140px;
+    border-top-right-radius: 23px 130px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 120px 24px;
+    padding: 2rem;
+
     background-color: #F3D662;
 
 }

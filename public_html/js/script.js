@@ -1,3 +1,5 @@
+//------Script for contact form ---//
+
 $(document).ready(function (){
     $('#contact').validate({
         debug: true,
@@ -51,3 +53,4 @@ $(document).ready(function (){
         }
     })
 })
+
