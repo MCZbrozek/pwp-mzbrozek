@@ -91,13 +91,17 @@ nav {
     margin: 2rem;
 }
 
+#rotate-wrap {
+    transform: rotate(var(--rotate))
+}
+
 .portfolio-wrap .card {
     border: #038C8C outset .5rem;
     outline: black .5rem solid;
     box-shadow: 0 0 0 1rem #45718C;
     margin: 4rem;
     outline-offset: 0.2rem;
-    transform: rotate(var(--rotate));
+    /*transform: rotate(var(--rotate));*/
     border-top-left-radius: 37px 140px;
     border-top-right-radius: 23px 130px;
     border-bottom-left-radius: 110px 19px;

@@ -1,22 +1,17 @@
 console.log('Is this thing on??')
 
 // Portfolio card rotate -----------//
-const portfolioCard = document.querySelector('.portfolio-wrap .card')
+const portfolioCard = document.getElementById('rotate-wrap')
 
-function rotateCard() {
-    if(portfolioCard.style.rotate === '0') {
-    portfolioCard.style.setProperty('--rotate', -1.2)
-        } else (portfolioCard.style.rotate == '-1.2' ); {
-        portfolioCard.style.setProperty('--rotate', 1.2)
-    }
+function rotateCard(e) {
+    this.style.setProperty('--rotate', 1.8)
 }
 
 function rotateBack() {
-
-
+    this.style.setProperty('--rotate', -100)
+    console.log(rotateBack)
 }
 
-portfolioCard.addEventListener('mouseover', rotateCard)
-portfolioCard.addEventListener('mouseleave', rotateCard)
+portfolioCard.addEventListener('mouseenter', rotateCard)
+portfolioCard.addEventListener('mouseleave', rotateBack)
 
-console.log(portfolioCard)
