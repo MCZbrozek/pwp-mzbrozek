@@ -1,6 +1,6 @@
 :root {
     --blur: 10px;
-    --rotate: -1.8deg
+    /*--rotate: -1.8deg*/
 }
 
 
@@ -81,36 +81,26 @@ nav {
 
 .portfolio-wrap {
     background-color: #515975;
-    position: relative;
-    background: url("./images/codingbackground.png");
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
-    background-position: center center;
-}
-
-.portfolio-wrap .col-sm {
-    margin: 2rem;
-}
-
-#rotate-wrap {
-    transform: rotate(var(--rotate))
+    /*position: static;*/
 }
 
 .portfolio-wrap .card {
     border: #038C8C outset .5rem;
-    outline: black .5rem solid;
-    box-shadow: 0 0 0 1rem #45718C;
-    margin: 4rem;
+    /*outline: black .1rem solid;*/
+    box-shadow: 0 0 2px 2px #45718C;
     outline-offset: 0.2rem;
     /*transform: rotate(var(--rotate));*/
-    border-top-left-radius: 37px 140px;
-    border-top-right-radius: 23px 130px;
-    border-bottom-left-radius: 110px 19px;
-    border-bottom-right-radius: 120px 24px;
-    padding: 2rem;
+    border-top-left-radius: 120px 20px;
+    border-top-right-radius: 120px 20px;
+    border-bottom-left-radius: 140px 23px;
+    border-bottom-right-radius: 140px 24px;
+    padding: 1rem;
+    background-color: whitesmoke;
 
-    background-color: #F3D662;
+}
 
+.portfolio-wrap img {
+    box-shadow: 2px 2px lightgrey;
 }
 
 /*--------About Me ------*/
