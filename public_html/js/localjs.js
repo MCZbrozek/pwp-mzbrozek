@@ -9,7 +9,7 @@ function rotateCard(e) {
 
 function rotateBack() {
     this.style.setProperty('--rotate', -100)
-    console.log(rotateBack)
+    // console.log(this.event) This works and logs the correct event, but does not apply the rotation.
 }
 
 portfolioCard.addEventListener('mouseenter', rotateCard)
