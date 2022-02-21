@@ -52,29 +52,30 @@ nav {
 .hero .row {
     font-family: 'Permanent Marker', cursive;
     position: relative;
+    display: flex;
     bottom: 125px;
     color: white;
     text-align: start;
     margin: 0.625rem;
-    text-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+    /*text-shadow: 2px 1px 1px rgba(0,0,0,0.5);*/
     /*outline: 2px red solid;*/
 }
 
-
-.hero-title {
-    font-size: 3rem;
-    font-weight: 600;
-    margin: 5rem;
-
-
+.hero .title-box .hero-title::before {
+    content: '';
+    position: absolute;
+    color: #038C8C;
+    background: #01858B;
+    text-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+    flex: fit-content;
 }
+/*.hero .title-box {*/
+/*    background: #01858B;*/
+/*    opacity: 80%;*/
+/*}*/
 
-.hero-subtitle {
-    font-size: 2rem;
-    font-weight: 200;
-    margin: 5rem;
 
-}
+
 
 /*------ Portfolio Wrap - capstone card and text --- */
 
