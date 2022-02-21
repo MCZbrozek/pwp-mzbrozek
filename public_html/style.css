@@ -46,6 +46,7 @@ nav {
     /*border-bottom: black .5rem solid;*/
     /*box-shadow: #45718C  2rem;*/
     box-shadow: inset 0 0 0 .5rem rgba(100,100,155,0.4);
+
 }
 
 
@@ -61,13 +62,15 @@ nav {
     /*outline: 2px red solid;*/
 }
 
-.hero .title-box .hero-title::before {
-    content: '';
-    position: absolute;
-    color: #038C8C;
-    background: #01858B;
-    text-shadow: 2px 1px 1px rgba(0,0,0,0.5);
-    flex: fit-content;
+ .title-box {
+     border: red solid 2px;
+     background: rgba(0, 0, 0, 0.5);
+    /*content: '';*/
+    /*position: absolute;*/
+    /*color: #038C8C;*/
+    /*background: #01858B;*/
+    /*text-shadow: 2px 1px 1px rgba(0,0,0,0.5);*/
+    /*flex: fit-content;*/
 }
 /*.hero .title-box {*/
 /*    background: #01858B;*/
