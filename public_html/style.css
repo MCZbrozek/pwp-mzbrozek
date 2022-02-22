@@ -149,14 +149,14 @@ nav {
 
 .about-me .skills-wrap {
     background-color: #8677A6;
-    color: white;
+    color: black;
     box-shadow: .2rem .22rem .1rem #515975;
 
 }
 
 .about-me .hobbies-wrap {
     background-color: #01858B;
-    color: white;
+    color: black;
     box-shadow: .2rem .22rem .1rem #515975;
     display: inline-block;
 }
@@ -168,7 +168,13 @@ nav {
     padding-bottom: -1rem;
     border-right: #F29F80 .4rem inset;
     border-bottom: #F29F80 .2rem inset;
+    color: lavender;
+}
 
+.about-me .card-subtitle {
+    color: lavender;
+    text-shadow: .12rem 0.1rem black;
+    margin-top: 1rem;
 }
 /* -------Image overlay -----------*/
 .skills-wrap .overlay-container {
