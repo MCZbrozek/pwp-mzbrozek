@@ -1,6 +1,6 @@
 :root {
     --blur: 10px;
-    /*--rotate: -1.8deg*/
+    font-size: 1.25rem;
 }
 
 
@@ -8,6 +8,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Padauk', sans-serif;
+    font-size: 1.5rem;
 }
 
 nav {
@@ -35,7 +36,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("./images/bike-at-zion.jpg");
+    background: url("./images/bike-at-zion-min.jpg");
     /*background: url("./images/redrocks_02.jpg");*/
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,8 +59,7 @@ nav {
     color: ghostwhite;
     text-align: start;
     margin: 0.625rem;
-    /*text-shadow: 2px 1px 1px rgba(0,0,0,0.5);*/
-    /*outline: 2px red solid;*/
+
 }
 
  .title-box h1 {
@@ -97,15 +97,24 @@ nav {
 
 .portfolio-wrap {
     background-color: #515975;
-    /*position: static;*/
+
+}
+
+.portfolio-h2 {
+    text-align: left;
+    display: inline-flex;
+    padding-right: -.2rem;
+    padding-bottom: -1rem;
+    border-right: #F29F80 .4rem inset;
+    border-bottom: #F29F80 .2rem inset;
+    color: #515975;
 }
 
 .portfolio-wrap .card {
     border: #038C8C outset .5rem;
-    /*outline: black .1rem solid;*/
+    outline: black .12rem solid;
     box-shadow: 0 0 2px 2px #45718C;
     outline-offset: 0.2rem;
-    /*transform: rotate(var(--rotate));*/
     border-top-left-radius: 120px 20px;
     border-top-right-radius: 120px 20px;
     border-bottom-left-radius: 140px 23px;
@@ -149,14 +158,14 @@ nav {
 
 .about-me .skills-wrap {
     background-color: #8677A6;
-    color: black;
+    color: whitesmoke;
     box-shadow: .2rem .22rem .1rem #515975;
 
 }
 
 .about-me .hobbies-wrap {
     background-color: #01858B;
-    color: black;
+    color: whitesmoke;
     box-shadow: .2rem .22rem .1rem #515975;
     display: inline-block;
 }
