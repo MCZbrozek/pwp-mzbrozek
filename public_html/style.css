@@ -218,12 +218,9 @@ nav {
     opacity: 1;
 }
 
-
-
 .hobbies-wrap .overlay-container {
     position: relative;
     width: 100%;
-
 }
 
 .hobbies-wrap img {
@@ -269,6 +266,7 @@ nav {
 /*footer line and quote style */
 .foot-line-wrap {
     background-color: #038C8C;
+    font-size: .8rem;
     outline: 5px black solid;
     color: black;
 
